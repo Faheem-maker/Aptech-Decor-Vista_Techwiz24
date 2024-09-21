@@ -1,0 +1,242 @@
+::ng-deep .container-mt-5  {
+    margin-top: 0 !important;
+  }
+  
+  .slider {
+    position: relative;
+    width: 100vw;
+    height: 70vh;
+    overflow: hidden;
+  }
+  
+  .slider-images {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .slider-counter {
+    position: absolute;
+    bottom: 2em;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 24px;
+    display: flex;
+    gap: 0.5em;
+    color: #ffff !important;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+  
+  .slider-counter > div {
+    flex: 1;
+  }
+  
+  .slider-counter p {
+    line-height: 22px;
+  }
+  
+  .counter {
+    position: relative;
+    top: 0px;
+    will-change: transform;
+  }
+  
+  .slider-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 64px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+  
+  .slider-title-wrapper {
+    position: relative;
+    width: 100%;
+    top: 0px;
+    text-align: center;
+    will-change: transform;
+  }
+  
+  .slider-title-wrapper p {
+    font-size: 50px;
+    line-height: 60px;
+    color: white;
+  }
+  
+  .slider-indicators {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    display: flex;
+    color: white;
+    cursor: pointer;
+    justify-content: space-between;
+  }
+  
+  .slider-indicators p {
+    position: relative;
+    font-size: 40px;
+    font-weight: 200;
+    will-change: transform;
+  }
+  
+  .slider-preview {
+    position: absolute;
+    bottom: 2em;
+    right: 2em;
+    width: 35%;
+    height: 50px;
+    display: flex;
+    gap: 1em;
+  }
+  
+  .preview {
+    position: relative;
+    flex: 1;
+    cursor: pointer;
+  }
+  
+  .preview img,
+  .slider-images img {
+    height: 100% !important;
+    width: 100% !important;
+  }
+  
+  .preview::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+  }
+  
+  .preview.active::after {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  
+  @media (max-width: 900px) {
+    .slider-indicators {
+      width: 90%;
+    }
+  
+    .slider-preview {
+      width: 90%;
+      bottom: 5em;
+    }
+  
+    .slider-title-wrapper p {
+      font-size: 30px;
+    }
+  }
+  
+  .t-products {
+    background-image: linear-gradient(to right top, #5629c0, #5625cb, #5620d5, #551ae0, #5412eb);
+    color: #fff;
+    border-radius: 3px
+}
+
+.processor {
+    background-color: #fff;
+    margin-top: 5px;
+    border-bottom: 1px solid #eee
+}
+
+.brand {
+    background-color: #fff;
+    border-bottom: 1px solid #eee
+}
+
+.type {
+    background-color: #fff
+}
+
+.product {
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    position: relative
+}
+
+.about span {
+    color: #5629c0;
+    font-size: 16px
+}
+
+.cart-button button {
+    font-size: 12px;
+    color: #fff;
+    background-color: #5629c0;
+    height: 38px
+}
+
+.cart-button button:focus,
+button:active {
+    font-size: 12px;
+    color: #fff;
+    background-color: #5629c0;
+    box-shadow: none
+}
+
+.product_fav i {
+    line-height: 40px;
+    color: #5629c0;
+    font-size: 15px
+}
+
+.product_fav {
+    display: inline-block;
+    width: 36px;
+    height: 39px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 11%;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 3px;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease
+}
+
+.product_fav:hover {
+    background: #5629c0
+}
+
+.product_fav:hover i {
+    color: #fff
+}
+
+.about {
+    margin-top: 12px
+}
+
+.off {
+    position: absolute;
+    left: 65%;
+    top: 6%;
+    width: 80px;
+    text-align: center;
+    height: 30px;
+    line-height: 8px;
+    border-radius: 5px;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff
+}
